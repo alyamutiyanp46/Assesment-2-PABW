@@ -1,0 +1,7 @@
+{
+  "UserManagement": false,
+  "Buku": false,
+  "Peminjaman": false,
+  "Facility": true,
+  "Complaint": true
+}

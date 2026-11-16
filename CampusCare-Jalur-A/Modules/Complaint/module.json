@@ -1,0 +1,9 @@
+{
+  "name": "Complaint",
+  "alias": "complaint",
+  "description": "Modul laporan kerusakan kampus",
+  "keywords": [],
+  "priority": 0,
+  "providers": ["Modules\\Complaint\\Providers\\ComplaintServiceProvider"],
+  "files": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pustaka",
+  "alias": "pustaka",
+  "description": "Modul katalog buku dan peminjaman untuk latihan PABW",
+  "keywords": [],
+  "priority": 0,
+  "providers": [],
+  "files": []
+}

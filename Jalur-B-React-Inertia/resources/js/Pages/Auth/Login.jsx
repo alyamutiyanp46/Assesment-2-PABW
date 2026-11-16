@@ -1,0 +1,7 @@
+import React from 'react';
+import { Link, useForm } from '@inertiajs/react';
+import AppLayout from '../Layouts/AppLayout';
+export default function Login() {
+  const form=useForm({email:'',password:'',remember:false});
+  return <AppLayout><div className="row justify-content-center py-lg-5"><div className="col-md-7 col-lg-5"><div className="card border-0 shadow-sm rounded-4 p-4 p-md-5"><div className="text-primary fw-bold">SIPUSTAKA</div><h1 className="h3 fw-bold mt-2">Selamat datang kembali</h1><p className="text-secondary">Masuk untuk mengelola bacaan dan peminjaman.</p><form onSubmit={e=>{e.preventDefault();form.post('/login')}}><label className="form-label">Email</label><input className="form-control mb-1" type="email" value={form.data.email} onChange={e=>form.setData('email',e.target.value)} required/><div className="text-danger small mb-2">{form.errors.email}</div><label className="form-label">Kata sandi</label><input className="form-control mb-1" type="password" value={form.data.password} onChange={e=>form.setData('password',e.target.value)} required/><div className="text-danger small mb-3">{form.errors.password}</div><button className="btn btn-primary w-100" disabled={form.processing}>{form.processing?'Memproses…':'Masuk'}</button></form><p className="mt-3 mb-0">Belum punya akun? <Link href="/register">Daftar</Link></p><small className="text-secondary mt-3">Demo admin: admin@sipustaka.test / password</small></div></div></div></AppLayout>;
+}

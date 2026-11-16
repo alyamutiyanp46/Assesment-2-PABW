@@ -1,0 +1,1 @@
+{"name":"campuscare/complaint","autoload":{"psr-4":{"Modules\\Complaint\\":"app/"}}}
